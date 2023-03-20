@@ -38,7 +38,7 @@ The gazenomed.py script has the following options:
 - **Concept file path** (-c or --concept_file): Path to the RF2 snomed-ct concept file. This file is named `sct2_Description_Full...` and is located in the Snomed-CT relative path `/Full/Terminology/`
 - **Relation file path** (-r or --relation_file): Path to the RF2 snomed-ct relation file. This file is named `sct2_Relationship_Full_...` and is located in the Snomed-CT relative path `/Full/Terminology/`. This file only exists in the international version.
 - **Language** (-l or --language): Language of the concept file. It can be 'en' or 'es'
-- **Semantic tags** (-s or --semantic_tags): list of snomed-ct semantic tags separated by comma (without space) you want to select from sct terminology. The default value ('all0) selects all semantic tags. If you don't want to select any semantic tag, write 'None'
+- **Semantic tags** (-s or --semantic_tags): list of snomed-ct semantic tags separated by comma (without space) you want to select from sct terminology. The default value ('all') selects all semantic tags. If you don't want to select any semantic tag, write 'None'
 - **Subtrees** (-t or --subtrees): a comma-separated list of snomed-ct codes (without spaces) from which you want to get the subtrees
 - **Output path** (-o or --out): Absolute output path where you want to save the gazetteer
 

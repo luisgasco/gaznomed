@@ -76,7 +76,7 @@ def main(argv=None):
     # PREPARE OUTPUT FILE
     output_df = pd.concat([filtered_concepts_df, subtrees_df]).reset_index(drop=True).copy()
     output_df = output_df.drop_duplicates(subset=["code","language","term","semantic_tag"]).reset_index(drop=True)
-    output_df.columns = ["code","term","semantic_tag","mainterm","language"]
+    output_df = output_df[["code","term","semantic_tag","mainterm","language"]]
     output_df.to_csv(options.out, sep="\t",index=False)
     print("Save file in {}".format(options.out))
 
