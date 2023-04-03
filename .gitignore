@@ -5,7 +5,8 @@ __pycache__/
 
 # Ignore environment folder
 .gaznomed_env/
-
+nbs
+nbs/
 
 
 # C extensions
